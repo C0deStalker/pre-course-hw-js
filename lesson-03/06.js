@@ -32,8 +32,8 @@ const users3 = [
 ];
 
 let arr = []
-for (let res of users3){
-res.isMarried = true
-arr.push(res)
-}
+arr.push(...users3);
+arr.forEach(element => {
+    element.isMarried = true;
+});
 console.log(arr);
